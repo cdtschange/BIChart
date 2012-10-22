@@ -1,27 +1,788 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch.iPad" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="igx-SQ-VOm">
     <dependencies>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
+        <!--Help View Controller - 关于我们-->
+        <scene sceneID="xe4-Fw-xn4">
+            <objects>
+                <viewController id="pv2-cV-G0f" customClass="HelpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BWw-wh-Gso">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bi3.png" id="Z6T-OF-CX4">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="704"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="联系人：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="3Qx-NB-Jkd">
+                                <rect key="frame" x="94" y="70" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="石帆" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="xfS-xv-SiH">
+                                <rect key="frame" x="194" y="70" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="联系邮箱：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="shr-fG-XMX">
+                                <rect key="frame" x="94" y="141" width="85" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="fanfan829@hotmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="VSe-Fl-Mhd">
+                                <rect key="frame" x="194" y="141" width="185" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="关于我们" id="Q2u-5O-V9W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kiz-IW-N31" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1537" y="-1069"/>
+        </scene>
+        <!--Table Chart View Controller-->
         <scene sceneID="4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="BITableChartViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HuT-Cd-grL">
+                                <rect key="frame" x="20" y="468" width="984" height="206"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="TableChartViewCell" textLabel="g67-1U-YnY" detailTextLabel="raG-RR-nGU" style="IBUITableViewCellStyleValue1" id="li1-3W-i7w">
+                                        <rect key="frame" x="0.0" y="22" width="984" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="984" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g67-1U-YnY">
+                                                    <rect key="frame" x="10" y="11" width="35" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="raG-RR-nGU">
+                                                    <rect key="frame" x="930" y="11" width="44" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <navigationItem key="navigationItem" id="SLb-1H-54g"/>
+                    <connections>
+                        <outlet property="dataTableView" destination="HuT-Cd-grL" id="8Qf-SY-7Lz"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1594" y="-42"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="3VO-w5-V8j">
+            <objects>
+                <viewController id="z9M-OS-2OL" customClass="BIMapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tPl-Me-ohc">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="wQ7-TB-Mp1">
+                                <rect key="frame" x="565" y="30" width="259" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4Lv-9N-7sY">
+                                <rect key="frame" x="554" y="75" width="447" height="204"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="MapChartViewCell" textLabel="8TV-tD-Jdd" detailTextLabel="r7b-mI-pXy" style="IBUITableViewCellStyleValue1" id="Kay-wk-7IJ">
+                                        <rect key="frame" x="0.0" y="22" width="447" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="447" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8TV-tD-Jdd">
+                                                    <rect key="frame" x="10" y="11" width="35" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r7b-mI-pXy">
+                                                    <rect key="frame" x="393" y="11" width="44" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" id="Hjr-ez-rlC" customClass="OBShapedButton">
+                                <rect key="frame" x="227" y="131" width="291" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="map1.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="floatOut:" destination="z9M-OS-2OL" eventType="touchUpInside" id="odx-OH-XzO"/>
+                                    <outletCollection property="gestureRecognizers" destination="rD6-UG-UTd" appends="YES" id="2Cz-zC-Hn4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tYU-iR-SKj" customClass="OBShapedButton">
+                                <rect key="frame" x="465" y="412" width="24" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="map5.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="floatOut:" destination="z9M-OS-2OL" eventType="touchUpInside" id="tFM-R2-BQf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" id="kcJ-kx-kzT" customClass="OBShapedButton">
+                                <rect key="frame" x="25" y="164" width="322" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="map2.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="floatOut:" destination="z9M-OS-2OL" eventType="touchUpInside" id="s7Z-pU-wBt"/>
+                                    <outletCollection property="gestureRecognizers" destination="sTy-2o-NyW" appends="YES" id="DQY-rD-nF9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2aY-uq-Dgd" customClass="OBShapedButton">
+                                <rect key="frame" x="39" y="305" width="294" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="map3.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="floatOut:" destination="z9M-OS-2OL" eventType="touchUpInside" id="O59-C9-S0Y"/>
+                                    <outletCollection property="gestureRecognizers" destination="jE7-aa-Od3" appends="YES" id="0lC-US-Nui"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vua-Eq-hsu" customClass="OBShapedButton">
+                                <rect key="frame" x="277" y="301" width="175" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="map4.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="floatOut:" destination="z9M-OS-2OL" eventType="touchUpInside" id="U88-ED-G41"/>
+                                    <outletCollection property="gestureRecognizers" destination="BNE-fE-HUj" appends="YES" id="5pq-yr-V1J"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="东北地区" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="z8n-KI-rnT">
+                                <rect key="frame" x="396" y="225" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="西北地区" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="UzC-On-l6I">
+                                <rect key="frame" x="136" y="256" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="西南地区" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="IBU-JA-bxL">
+                                <rect key="frame" x="230" y="389" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="东南地区" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="SGi-Fz-eeQ">
+                                <rect key="frame" x="367" y="376" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="台湾" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="obg-zS-04w">
+                                <rect key="frame" x="464" y="419" width="21" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="ezG-p4-MuX">
+                                <rect key="frame" x="20" y="69" width="509" height="616"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Oay-XH-RtB" customClass="OBShapedButton">
+                                        <rect key="frame" x="-11" y="20" width="292" height="232"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="map2_1.PNG">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="map2:" destination="z9M-OS-2OL" eventType="touchUpInside" id="6G1-1v-TCZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XDA-gF-kMf" customClass="OBShapedButton">
+                                        <rect key="frame" x="160" y="119" width="202" height="228"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="map2_2.PNG">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="map2:" destination="z9M-OS-2OL" eventType="touchUpInside" id="O7C-YQ-ptr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="V7e-SV-Zif" customClass="OBShapedButton">
+                                        <rect key="frame" x="260" y="223" width="226" height="134"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="map2_3.PNG">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="map2:" destination="z9M-OS-2OL" eventType="touchUpInside" id="wFY-43-DIy"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="西北地区-A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="RTI-0M-84r">
+                                        <rect key="frame" x="103" y="141" width="55" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="西北地区-B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="VtO-LK-9BA">
+                                        <rect key="frame" x="240" y="222" width="58" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="西北地区-C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="UWa-oT-tDr">
+                                        <rect key="frame" x="379" y="279" width="57" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Cn-O5-Fv3" customClass="OBShapedButton">
+                                        <rect key="frame" x="112" y="-3" width="332" height="303"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="map4_1.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="map4:" destination="z9M-OS-2OL" eventType="touchUpInside" id="v88-La-j2x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yvR-Uu-uct" customClass="OBShapedButton">
+                                        <rect key="frame" x="41" y="216" width="342" height="208"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="map4_2.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="map4:" destination="z9M-OS-2OL" eventType="touchUpInside" id="SYP-fd-8IY"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="东南地区-A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="vrC-ym-fZb">
+                                        <rect key="frame" x="260" y="146" width="54" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="东南地区-B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="SlC-nZ-Tvk">
+                                        <rect key="frame" x="210" y="302" width="58" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nO2-tI-SZI" customClass="OBShapedButton">
+                                        <rect key="frame" x="4" y="110" width="189" height="148"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="map3_1.PNG">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="map3:" destination="z9M-OS-2OL" eventType="touchUpInside" id="VKZ-Zu-Wiq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Sry-cE-g9z" customClass="OBShapedButton">
+                                        <rect key="frame" x="281" y="204" width="218" height="203"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="map3_3.PNG">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="map3:" destination="z9M-OS-2OL" eventType="touchUpInside" id="Xnx-ob-Llv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I4g-le-6e3" customClass="OBShapedButton">
+                                        <rect key="frame" x="107" y="170" width="277" height="139"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="map3_2.PNG">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="map3:" destination="z9M-OS-2OL" eventType="touchUpInside" id="c0R-wN-snK"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="西南地区-A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="S1z-bq-uJI">
+                                        <rect key="frame" x="77" y="158" width="55" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="西南地区-B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aEF-IA-h1o">
+                                        <rect key="frame" x="201" y="232" width="59" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="西南地区-C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="iTN-4D-NJp">
+                                        <rect key="frame" x="377" y="288" width="65" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="i0Z-8E-Sre" customClass="OBShapedButton">
+                                        <rect key="frame" x="4" y="278" width="295" height="182"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="map1_2.PNG">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="map1:" destination="z9M-OS-2OL" eventType="touchUpInside" id="DaK-AF-bJ9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WwK-04-Sb4" customClass="OBShapedButton">
+                                        <rect key="frame" x="232" y="110" width="269" height="277"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="map1_1.PNG">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="map1:" destination="z9M-OS-2OL" eventType="touchUpInside" id="Xcd-Gx-Z4G"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="东北地区-A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="yRt-PC-mZg">
+                                        <rect key="frame" x="337" y="250" width="59" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="东北地区-B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="p6b-iS-ESg">
+                                        <rect key="frame" x="148" y="348" width="61" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Li-av-2RJ" customClass="OBShapedButton">
+                                <rect key="frame" x="207" y="496" width="45" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="map6.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="floatOut:" destination="z9M-OS-2OL" eventType="touchUpInside" id="jfx-6a-iUY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="海南" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cyH-3e-f3P">
+                                <rect key="frame" x="214" y="505" width="38" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4gV-nl-uXN"/>
+                    <connections>
+                        <outlet property="EastNorth_lable1" destination="yRt-PC-mZg" id="aT6-UJ-8uQ"/>
+                        <outlet property="EastNorth_lable2" destination="p6b-iS-ESg" id="wfi-Er-AdM"/>
+                        <outlet property="EastSouth_lable1" destination="vrC-ym-fZb" id="iTN-S8-eV5"/>
+                        <outlet property="EastSouth_lable2" destination="SlC-nZ-Tvk" id="DLT-1v-dZW"/>
+                        <outlet property="WestNorth_lable1" destination="RTI-0M-84r" id="um1-90-yZ3"/>
+                        <outlet property="WestNorth_lable2" destination="VtO-LK-9BA" id="xgr-Tg-7V2"/>
+                        <outlet property="WestNorth_lable3" destination="UWa-oT-tDr" id="xbE-af-Ggx"/>
+                        <outlet property="WestSoth_lable2" destination="aEF-IA-h1o" id="8hX-gb-ofJ"/>
+                        <outlet property="WestSouth_lable1" destination="S1z-bq-uJI" id="AzG-Tx-r4e"/>
+                        <outlet property="WestSouth_lable3" destination="iTN-4D-NJp" id="Xfc-11-Nbc"/>
+                        <outlet property="areaLable" destination="wQ7-TB-Mp1" id="LSB-33-mLp"/>
+                        <outlet property="bt6" destination="8Li-av-2RJ" id="8bB-AO-B1j"/>
+                        <outlet property="btn1" destination="Hjr-ez-rlC" id="ofh-nW-UfE"/>
+                        <outlet property="btn2" destination="kcJ-kx-kzT" id="pua-SM-YCc"/>
+                        <outlet property="btn3" destination="2aY-uq-Dgd" id="6kz-W1-HP8"/>
+                        <outlet property="btn4" destination="vua-Eq-hsu" id="Ngu-1c-VoA"/>
+                        <outlet property="btn5" destination="tYU-iR-SKj" id="4hj-8C-JZk"/>
+                        <outlet property="hainanLable" destination="cyH-3e-f3P" id="6tK-0a-7Mf"/>
+                        <outlet property="lable1" destination="z8n-KI-rnT" id="a1Y-WB-3vW"/>
+                        <outlet property="lable2" destination="UzC-On-l6I" id="aJR-aB-hOm"/>
+                        <outlet property="lable3" destination="IBU-JA-bxL" id="dOl-la-PbL"/>
+                        <outlet property="lable4" destination="SGi-Fz-eeQ" id="arj-Lw-FlX"/>
+                        <outlet property="lable5" destination="obg-zS-04w" id="ZLC-Ft-xIG"/>
+                        <outlet property="map1_Bt1" destination="i0Z-8E-Sre" id="Vnf-ha-VGw"/>
+                        <outlet property="map1_Bt2" destination="WwK-04-Sb4" id="hFs-Al-a5t"/>
+                        <outlet property="map2_Bt1" destination="Oay-XH-RtB" id="seZ-Yy-pjP"/>
+                        <outlet property="map2_Bt2" destination="XDA-gF-kMf" id="Ry7-eT-SQF"/>
+                        <outlet property="map2_Bt3" destination="V7e-SV-Zif" id="Nvp-Xj-D5N"/>
+                        <outlet property="map3_Bt1" destination="nO2-tI-SZI" id="tQQ-4B-thP"/>
+                        <outlet property="map3_Bt2" destination="I4g-le-6e3" id="xdA-QH-fLV"/>
+                        <outlet property="map3_Bt3" destination="Sry-cE-g9z" id="hh2-GP-vl0"/>
+                        <outlet property="map4_Bt1" destination="yvR-Uu-uct" id="Jbe-eO-3h6"/>
+                        <outlet property="map4_Bt2" destination="0Cn-O5-Fv3" id="ggY-Uf-Tvo"/>
+                        <outlet property="mapView" destination="ezG-p4-MuX" id="DBw-9M-pGr"/>
+                        <outlet property="sourceTable" destination="4Lv-9N-7sY" id="PeY-qr-9nr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhI-I1-MsS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="rD6-UG-UTd">
+                    <connections>
+                        <action selector="pinch_it:" destination="z9M-OS-2OL" id="F9z-f7-BKY"/>
+                        <outlet property="delegate" destination="mhI-I1-MsS" id="p5M-n8-lWL"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="sTy-2o-NyW">
+                    <connections>
+                        <action selector="pinch_it2:" destination="z9M-OS-2OL" id="Sog-y6-rwI"/>
+                        <outlet property="delegate" destination="mhI-I1-MsS" id="FaR-vM-tnb"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="jE7-aa-Od3">
+                    <connections>
+                        <action selector="pinch_it3:" destination="z9M-OS-2OL" id="f8w-On-rpD"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="BNE-fE-HUj">
+                    <connections>
+                        <action selector="pinch_it4:" destination="z9M-OS-2OL" id="36A-xu-6l5"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1522" y="900"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="oi7-n4-Jiv">
+            <objects>
+                <viewController id="Iab-1e-dPo" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qTc-pO-orx">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Pyz-2V-WIi">
+                                <rect key="frame" x="25" y="19" width="319" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zoA-2m-4Qy">
+                                        <rect key="frame" x="12" y="15" width="295" height="196"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="1" image="eg1.jpg">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="2" kind="push" id="Mz6-DV-iHT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="qmQ-XY-KQU">
+                                <rect key="frame" x="406" y="20" width="319" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NzC-z0-dgp">
+                                        <rect key="frame" x="12" y="15" width="295" height="196"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="1" image="eg2.jpg">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="z9M-OS-2OL" kind="push" id="mmm-de-NnG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zPx-xh-AaE">
+                        <barButtonItem key="rightBarButtonItem" id="FRm-lI-XyS">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="rKr-qv-Q4V">
+                                <rect key="frame" x="999" y="12" width="18" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pv2-cV-G0f" kind="push" id="vzr-NM-maB"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MQ7-9c-9x9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="-54"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Q2O-hL-3mw">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="igx-SQ-VOm" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="Jd7-LZ-4Fz">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Iab-1e-dPo" kind="relationship" relationship="rootViewController" id="lp0-Se-xbq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vZ-zj-Lc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-890" y="-42"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bi3.png" width="1024" height="705"/>
+        <image name="eg1.jpg" width="995" height="669"/>
+        <image name="eg2.jpg" width="992" height="679"/>
+        <image name="map1.png" width="632" height="456"/>
+        <image name="map1_1.PNG" width="343" height="351"/>
+        <image name="map1_2.PNG" width="369" height="233"/>
+        <image name="map2.png" width="694" height="471"/>
+        <image name="map2_1.PNG" width="398" height="317"/>
+        <image name="map2_2.PNG" width="280" height="318"/>
+        <image name="map2_3.PNG" width="317" height="184"/>
+        <image name="map3.png" width="637" height="404"/>
+        <image name="map3_1.PNG" width="238" height="189"/>
+        <image name="map3_2.PNG" width="349" height="181"/>
+        <image name="map3_3.PNG" width="288" height="271"/>
+        <image name="map4.png" width="374" height="417"/>
+        <image name="map4_1.png" width="289" height="271"/>
+        <image name="map4_2.png" width="329" height="197"/>
+        <image name="map5.png" width="42" height="92"/>
+        <image name="map6.png" width="62" height="63"/>
+    </resources>
+    <classes>
+        <class className="BIMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BIMapViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="floatOut:"/>
+                <relationship kind="action" name="map1:"/>
+                <relationship kind="action" name="map2:"/>
+                <relationship kind="action" name="map3:"/>
+                <relationship kind="action" name="map4:"/>
+                <relationship kind="action" name="pinch_it2:" candidateClass="UIPinchGestureRecognizer"/>
+                <relationship kind="action" name="pinch_it3:" candidateClass="UIPinchGestureRecognizer"/>
+                <relationship kind="action" name="pinch_it4:" candidateClass="UIPinchGestureRecognizer"/>
+                <relationship kind="action" name="pinch_it:" candidateClass="UIPinchGestureRecognizer"/>
+                <relationship kind="action" name="toSmall:"/>
+                <relationship kind="outlet" name="EastNorth_lable1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="EastNorth_lable2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="EastSouth_lable1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="EastSouth_lable2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WestNorth_lable1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WestNorth_lable2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WestNorth_lable3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WestSoth_lable2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WestSouth_lable1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WestSouth_lable3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="areaLable" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bt6" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="btn1" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="btn2" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="btn3" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="btn4" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="btn5" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="hainanLable" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lable1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lable2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lable3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lable4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lable5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="map1_Bt1" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="map1_Bt2" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="map2_Bt1" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="map2_Bt2" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="map2_Bt3" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="map3_Bt1" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="map3_Bt2" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="map3_Bt3" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="map4_Bt1" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="map4_Bt2" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="mapView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="sourceTable" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="BITableChartViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BITableChartViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="HelpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HelpViewController.h"/>
+        </class>
+        <class className="MainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
+        </class>
+        <class className="OBShapedButton" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OBShapedButton.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
-        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

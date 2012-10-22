@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 
-@implementation AppDelegate
+
+ @implementation AppDelegate
+@synthesize window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
