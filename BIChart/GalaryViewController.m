@@ -12,6 +12,7 @@
 {
     NSDictionary *itemDictSource;
     NSArray *itemSectionSource;
+    NSString *selectSegue;
 }
 
 @end
@@ -42,7 +43,12 @@
 
 - (void)initSource{
     itemSectionSource = @[@"Pie",@"Bar",@"Scatter"];
-    itemDictSource = @{@"Pie":@[@"PieBase"],@"Bar":@[@"BarBase"],@"Scatter":@[@"ScatterBase"]};
+    itemDictSource = @{@"Pie":@[@"PieBase"],@"Bar":@[@"BarBase",@"BarHorizontal"],@"Scatter":@[@"ScatterBase"]};
+}
+
+
+- (IBAction)click_GoIn:(id)sender {
+    [self performSegueWithIdentifier:[NSString stringWithFormat:@"GoTo%@",selectSegue] sender:sender];
 }
 
 -(NSUInteger)supportedInterfaceOrientations{
@@ -79,8 +85,7 @@
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
+    selectSegue = itemDictSource[itemSectionSource[indexPath.section]][indexPath.row];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 30;
@@ -88,7 +93,6 @@
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     return itemSectionSource[section];
 }
-
 
 
 

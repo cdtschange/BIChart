@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface GalaryViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+- (IBAction)click_GoIn:(id)sender;
 
 @end

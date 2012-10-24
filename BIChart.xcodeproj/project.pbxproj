@@ -11,6 +11,7 @@
 		CE90C2E11637D36E00EA857F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE90C2DE1637D36E00EA857F /* LoginViewController.m */; };
 		CE90C2E21637D36E00EA857F /* GalaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE90C2E01637D36E00EA857F /* GalaryViewController.m */; };
 		CE90C2E61637D45600EA857F /* BarBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE90C2E51637D45600EA857F /* BarBaseViewController.m */; };
+		CE90C2E91637D52200EA857F /* BarHorizontalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE90C2E81637D52200EA857F /* BarHorizontalViewController.m */; };
 		CEB8536915EB42480009979A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB8536815EB42480009979A /* UIKit.framework */; };
 		CEB8536B15EB42480009979A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB8536A15EB42480009979A /* Foundation.framework */; };
 		CEB8536D15EB42480009979A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB8536C15EB42480009979A /* CoreGraphics.framework */; };
@@ -40,6 +41,8 @@
 		CE90C2E01637D36E00EA857F /* GalaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalaryViewController.m; sourceTree = "<group>"; };
 		CE90C2E41637D45600EA857F /* BarBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarBaseViewController.h; sourceTree = "<group>"; };
 		CE90C2E51637D45600EA857F /* BarBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarBaseViewController.m; sourceTree = "<group>"; };
+		CE90C2E71637D52200EA857F /* BarHorizontalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarHorizontalViewController.h; sourceTree = "<group>"; };
+		CE90C2E81637D52200EA857F /* BarHorizontalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarHorizontalViewController.m; sourceTree = "<group>"; };
 		CEB8536415EB42480009979A /* BIChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BIChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB8536815EB42480009979A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEB8536A15EB42480009979A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -104,6 +107,8 @@
 			children = (
 				CE90C2E41637D45600EA857F /* BarBaseViewController.h */,
 				CE90C2E51637D45600EA857F /* BarBaseViewController.m */,
+				CE90C2E71637D52200EA857F /* BarHorizontalViewController.h */,
+				CE90C2E81637D52200EA857F /* BarHorizontalViewController.m */,
 			);
 			name = Bar;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 				CE90C2E11637D36E00EA857F /* LoginViewController.m in Sources */,
 				CE90C2E21637D36E00EA857F /* GalaryViewController.m in Sources */,
 				CE90C2E61637D45600EA857F /* BarBaseViewController.m in Sources */,
+				CE90C2E91637D52200EA857F /* BarHorizontalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
